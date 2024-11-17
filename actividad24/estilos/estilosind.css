@@ -1,0 +1,138 @@
+body {
+    font-family: 'Creepster', cursive, Arial, sans-serif; /* Fuente terrorífica */
+    background-image: url('img_estilo/image.png');
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #f8f8f8; /* Texto claro */
+}
+
+nav {
+    background-color: #660000; /* Rojo oscuro */
+    width: 100%;
+    padding: 10px;
+    border-bottom: 2px solid black;
+    box-shadow: inset -10px 0px 15px black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+li a {
+    text-decoration: none;
+    color: #f8f8f8; /* Texto claro */
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+li a:hover {
+    color: #ffcc00; /* Amarillo pálido */
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+header {
+    width: 100%;
+    height: 12em;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8); /* Fondo translúcido */
+    padding: 20px;
+    box-shadow: 0 0 20px black;
+}
+
+h1, h2 {
+    color: #ff0000; /* Rojo sangre */
+    text-shadow: 2px 2px 10px rgba(255, 0, 0, 0.7);
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ffcc00; /* Amarillo pálido */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #333; /* Fondo oscuro */
+    border: 1px solid #660000; /* Bordes rojos oscuros */
+    border-radius: 5px;
+    color: #f8f8f8; /* Texto claro */
+    font-size: 1em;
+}
+
+button.registro, button.login {
+    width: 100%;
+    padding: 10px;
+    color: #f8f8f8; /* Texto claro */
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button.registro {
+    background-color: #b31717; /* Naranja oscuro */
+}
+
+button.login {
+    background-color: #bb0909; /* Rojo oscuro */
+}
+
+button:hover {
+    background-color: #ff0000; /* Rojo sangre */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+a {
+    text-decoration: none;
+    color: #ffcc00; /* Amarillo pálido */
+    font-weight: bold;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+    color: #ff0000; /* Rojo sangre */
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+}
+
+p {
+    color: #f8f8f8; /* Texto claro */
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 10em;
+    }
+
+    li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    button.registro, button.login {
+        width: auto;
+    }
+}
